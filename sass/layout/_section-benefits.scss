@@ -1,0 +1,49 @@
+.section-benefits {
+    font-size: 14px;
+
+    &__list {
+            display: flex;
+            gap: 30px;
+        }
+
+    &__item {
+            flex-basis: calc((100% - (3 * 30px)) / 4);
+        }
+
+    &__wrapper-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            width: 270px;
+            height: 120px;
+            background-color: var(--background-color);
+    
+            margin-bottom: 30px;
+        }
+
+     &__img {
+            background-color: var(--background-color);
+        }
+
+    &__subtitle {
+            margin-bottom: 10px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+        }
+
+    &__desc {
+                    line-height: 1.72;
+                }
+
+}
+
+
+
+
+
+
+

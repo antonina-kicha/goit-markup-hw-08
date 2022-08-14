@@ -1,0 +1,38 @@
+.section-clients {
+    &--last{
+            padding-bottom: 94px;
+    }
+
+    &__title {
+            margin-bottom: 50px;
+        }
+
+    &__list {
+            display: flex;
+            gap: 30px;
+        }
+
+    &__logo {
+            fill: currentColor;
+        }
+}
+
+
+.section-clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+
+    transition: color var(--animation), border-color var(--animation);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+}
