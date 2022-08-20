@@ -1,14 +1,27 @@
 .subscribe-form {
-    display: flex;
+ 
+    @media screen and (min-width: 1200px) {
+            display: flex;
+    }
 
     &__btn {
-            display: inline-flex;
+        display: block;
             gap: 10px;
             align-items: center;
             justify-content: center;
 
             padding: 10px 28px 10px 29px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            @media screen and (min-width: 1200px) {
+                            display: inline-flex;  
+                            margin-top: 0;
+            }
+
         }
+
 
     &__icon {
             fill: var(--text-on-background);
@@ -17,8 +30,7 @@
 
 .subscribe-form__field {
     display: inline-block;
-    width: 358px;
-    margin-right: 12px;
+    width: 100%;    
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 15px;
@@ -43,6 +55,16 @@
             border-color: var(--accent-color);
             outline: transparent;
         }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+
+    }
+    @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin-right: 12px;
+        
+    }
 }
 
 

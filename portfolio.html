@@ -26,51 +26,130 @@
 
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header header-line">
       <div class="container header__container">
         <a href="./index.html" class="logo header__logo"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav class="nav-menu">
-          <ul class="nav-menu__list nav-menu__list--web list">
-            <li class="nav-menu__item">
-              <a href="./index.html" class="nav-menu__link link">Студия</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="./portfolio.html" class="nav-menu__link link nav-menu__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="nav-menu__item">
-              <a href="" class="nav-menu__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="nav-contact list nav-contact--right nav-contact--web">
-          <li class="nav-contact__item">
-            <a href="mailto:info@devstudio.com" class="nav-contact__link link">
-              <div class="nav-contact__wrapper">
-                <svg class="nav-contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-                <p>info@devstudio.com</p>
-              </div>
-            </a>
-          </li>
-          <li class="nav-contact__item">
-            <a href="tel:+380991111111" class="nav-contact__link link">
-              <div class="nav-contact__wrapper nav-contact__wrapper--center">
-                <svg class="nav-contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                <p>+38 096 111 11 11</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <!-- Кнопка бургера  -->
+        <button type="button" class="burger-btn" aria-expanded="false" data-menu-open>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="burger-btn__icon-menu" href="./images/icons.svg#icon-menu_burger"></use>
+          </svg>
+        </button>
+        <!-- Мобильное меню  -->
+
+        <div class="mobile-menu" data-menu>
+          <button
+            type="button"
+            class="burger-btn mobile-menu__burger-close-btn"
+            aria-expanded="true"
+            data-menu-close
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="burger-btn__icon-close" href="./images/icons.svg#icon-close_burger"></use>
+            </svg>
+          </button>
+
+          <nav class="nav-menu">
+            <ul class="nav-menu__list nav-menu__list--web list">
+              <li class="nav-menu__item">
+                <a href="./index.html" class="nav-menu__link link">Студия</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="./portfolio.html" class="nav-menu__link link nav-menu__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a href="" class="nav-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <ul class="nav-contact list nav-contact--right nav-contact--web">
+              <li class="nav-contact__item">
+                <a href="mailto:info@devstudio.com" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper">
+                    <svg class="nav-contact__icon" width="16" height="12">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    <p class="email-mob-menu">info@devstudio.com</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-contact__item">
+                <a href="tel:+380991111111" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper nav-contact__wrapper--center">
+                    <svg class="nav-contact__icon" width="10" height="16">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    <p>+38 096 111 11 11</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="burger-social list">
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">Instagram</a>
+              </li>
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">Twitter</a>
+              </li>
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">Facebook</a>
+              </li>
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Стандартное меню  -->
+
+        <div class="menu-container">
+          <nav class="nav-menu">
+            <ul class="nav-menu__list nav-menu__list--web list">
+              <li class="nav-menu__item">
+                <a href="./index.html" class="nav-menu__link link nav-menu__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a href="./portfolio.html" class="nav-menu__link link">Портфолио</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="" class="nav-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <ul class="nav-contact list nav-contact--right nav-contact--web">
+              <li class="nav-contact__item">
+                <a href="mailto:info@devstudio.com" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper">
+                    <svg class="nav-contact__icon" width="16" height="12">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    <p>info@devstudio.com</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-contact__item">
+                <a href="tel:+380991111111" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper nav-contact__wrapper--center">
+                    <svg class="nav-contact__icon" width="10" height="16">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    <p>+38 096 111 11 11</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-
     <!-- Основной контент -->
     <main>
       <!-- Секция с примерами работ -->
@@ -103,9 +182,18 @@
                   <div class="thumb">
                     <img
                       class="worklist-list-img"
-                      src="./images/imagesportfolio/web-technokryak.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgtehno-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgtehno-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgtehno-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgtehno-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgtehno-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgtehno-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgtehno-354.jpg"
                       alt="Открытый ноутбук"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -116,7 +204,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="desc">
+                  <div class="desc desc-higth">
                     <h2 class="title">Технокряк</h2>
                     <p class="category">Веб-сайт</p>
                   </div>
@@ -126,9 +214,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/design-poster-basketball.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgOrlean-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgOrlean-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgOrlean-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgOrlean-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgOrlean-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgOrlean-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgOrlean-354.jpg"
                       alt="Постер с баскетболистами"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -149,9 +246,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/app-restaurant.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgSeafood-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgSeafood-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgSeafood-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgSeafood-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgSeafood-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgSeafood-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgSeafood-354.jpg"
                       alt="Рыба как лого ресторана"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -172,9 +278,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/marketing-headphones.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgPrime-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgPrime-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgPrime-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgPrime-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgPrime-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgPrime-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgPrime-354.jpg"
                       alt="Наушники"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -195,9 +310,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/app-boxes.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgBoxes-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgBoxes-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgBoxes-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgBoxes-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgBoxes-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgBoxes-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgBoxes-354.jpg"
                       alt="Две коробки"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -218,9 +342,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/web-monitor.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgInspiration-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgInspiration-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgInspiration-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgInspiration-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgInspiration-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgInspiration-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgInspiration-354.jpg"
                       alt="Монитор"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -241,9 +374,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/design-edition.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgEdition-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgEdition-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgEdition-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgEdition-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgEdition-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgEdition-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgEdition-354.jpg"
                       alt="Раскрытый журнал"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -264,9 +406,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/marketimg-label.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgLAB-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgLAB-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgLAB-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgLAB-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgLAB-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgLAB-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgLAB-354.jpg"
                       alt="Бирка"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">
@@ -287,9 +438,18 @@
                 <a href="" class="link">
                   <div class="thumb">
                     <img
-                      src="./images/imagesportfolio/app-growing-business.jpg"
+                      srcset="
+                        ./images/imagesportfolio/w/imgGrowing-354.jpg 354w,
+                        ./images/imagesportfolio/w/imgGrowing-370.jpg 370w,
+                        ./images/imagesportfolio/w/imgGrowing-450.jpg 450w,
+                        ./images/imagesportfolio/w/imgGrowing-708.jpg 708w,
+                        ./images/imagesportfolio/w/imgGrowing-740.jpg 740w,
+                        ./images/imagesportfolio/w/imgGrowing-900.jpg 900w
+                      "
+                      sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                      src="./images/imagesportfolio/w/imgGrowing-354.jpg"
                       alt="Человек набирает что-то на ноутбуке"
-                      width="370"
+                      width="450"
                       height="294"
                     />
                     <div class="overlay">

@@ -31,41 +31,123 @@
         <a href="./index.html" class="logo header__logo"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav class="nav-menu">
-          <ul class="nav-menu__list nav-menu__list--web list">
-            <li class="nav-menu__item">
-              <a href="./index.html" class="nav-menu__link link nav-menu__link--current">Студия</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="./portfolio.html" class="nav-menu__link link">Портфолио</a>
-            </li>
-            <li class="nav-menu__item">
-              <a href="" class="nav-menu__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="nav-contact list nav-contact--right nav-contact--web">
-          <li class="nav-contact__item">
-            <a href="mailto:info@devstudio.com" class="nav-contact__link link">
-              <div class="nav-contact__wrapper">
-                <svg class="nav-contact__icon" width="16" height="12">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-                <p>info@devstudio.com</p>
-              </div>
-            </a>
-          </li>
-          <li class="nav-contact__item">
-            <a href="tel:+380991111111" class="nav-contact__link link">
-              <div class="nav-contact__wrapper nav-contact__wrapper--center">
-                <svg class="nav-contact__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                <p>+38 096 111 11 11</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <!-- Кнопка бургера  -->
+        <button type="button" class="burger-btn" aria-expanded="false" data-menu-open>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="burger-btn__icon-menu" href="./images/icons.svg#icon-menu_burger"></use>
+          </svg>
+        </button>
+        <!-- Мобильное меню  -->
+
+        <div class="mobile-menu" data-menu>
+          <button
+            type="button"
+            class="burger-btn mobile-menu__burger-close-btn"
+            aria-expanded="true"
+            data-menu-close
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="burger-btn__icon-close" href="./images/icons.svg#icon-close_burger"></use>
+            </svg>
+          </button>
+
+          <nav class="nav-menu">
+            <ul class="nav-menu__list nav-menu__list--web list">
+              <li class="nav-menu__item">
+                <a href="./index.html" class="nav-menu__link link nav-menu__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a href="./portfolio.html" class="nav-menu__link link">Портфолио</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="" class="nav-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <ul class="nav-contact list nav-contact--right nav-contact--web">
+              <li class="nav-contact__item">
+                <a href="mailto:info@devstudio.com" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper">
+                    <svg class="nav-contact__icon" width="16" height="12">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    <p class="email-mob-menu">info@devstudio.com</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-contact__item">
+                <a href="tel:+380991111111" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper nav-contact__wrapper--center">
+                    <svg class="nav-contact__icon" width="10" height="16">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    <p>+38 096 111 11 11</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="burger-social list">
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">Instagram</a>
+              </li>
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">Twitter</a>
+              </li>
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">Facebook</a>
+              </li>
+              <li class="item burger-social__item">
+                <a href="" class="burger-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Стандартное меню  -->
+
+        <div class="menu-container">
+          <nav class="nav-menu">
+            <ul class="nav-menu__list nav-menu__list--web list">
+              <li class="nav-menu__item">
+                <a href="./index.html" class="nav-menu__link link nav-menu__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a href="./portfolio.html" class="nav-menu__link link">Портфолио</a>
+              </li>
+              <li class="nav-menu__item">
+                <a href="" class="nav-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <ul class="nav-contact list nav-contact--right nav-contact--web">
+              <li class="nav-contact__item">
+                <a href="mailto:info@devstudio.com" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper">
+                    <svg class="nav-contact__icon" width="16" height="12">
+                      <use href="./images/icons.svg#mail"></use>
+                    </svg>
+                    <p>info@devstudio.com</p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-contact__item">
+                <a href="tel:+380991111111" class="nav-contact__link link">
+                  <div class="nav-contact__wrapper nav-contact__wrapper--center">
+                    <svg class="nav-contact__icon" width="10" height="16">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    <p>+38 096 111 11 11</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -166,6 +248,7 @@
           </div>
         </div>
       </div>
+
       <!-- Преимущества студии -->
       <section class="section-benefits section">
         <div class="container">
@@ -258,11 +341,65 @@
           <h2 class="section-team__section-title section-title">Наша команда</h2>
           <ul class="list section-team__list">
             <li class="section-team__item">
-              <img
-                src="./images/imagesmain/Demyanenko.jpg"
-                alt="Фото Product Designer Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <!-- desctop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-demyanenko@1x_desk.webp 1x,
+                    ./images/imagesmain/team/img-demyanenko@2x_desk.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-demyanenko@1x_desk.jpg 1x,
+                    ./images/imagesmain/team/img-demyanenko@2x_desk.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-demyanenko@1x_tab.webp 1x,
+                    ./images/imagesmain/team/img-demyanenko@2x_tab.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-demyanenko@1x_tab.jpg 1x,
+                    ./images/imagesmain/team/img-demyanenko@2x_tab.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-demyanenko@1x_mob.webp 1x,
+                    ./images/imagesmain/team/img-demyanenko@2x_mob.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-demyanenko@1x_mob.jpg 1x,
+                    ./images/imagesmain/team/img-demyanenko@2x_mob.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img
+                  src="./images/imagesmain/team/img-demyanenko@1x_mob.jpg"
+                  alt="Фото Product Designer Игорь Демьяненко"
+                  width=""
+                />
+              </picture>
               <div class="section-team__card">
                 <h3 class="section-team__subtitle subtitle">Игорь Демьяненко</h3>
                 <p class="section-team__desc" lang="en">Product Designer</p>
@@ -323,11 +460,65 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                src="./images/imagesmain/Repina.jpg"
-                alt="Фото Frontend Developer Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <!-- desctop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-repina@1x_desk.webp 1x,
+                    ./images/imagesmain/team/img-repina@2x_desk.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-repina@1x_desk.jpg 1x,
+                    ./images/imagesmain/team/img-repina@2x_desk.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-repina@1x_tab.webp 1x,
+                    ./images/imagesmain/team/img-repina@2x_tab.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-repina@1x_tab.jpg 1x,
+                    ./images/imagesmain/team/img-repina@2x_tab.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-repina@1x_mob.webp 1x,
+                    ./images/imagesmain/team/img-repina@2x_mob.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-repina@1x_mob.jpg 1x,
+                    ./images/imagesmain/team/img-repina@2x_mob.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img
+                  src="./images/imagesmain/team/img-repina@1x_mob.jpg"
+                  alt="Фото Frontend Developer Ольга Репина"
+                  width=""
+                />
+              </picture>
               <div class="section-team__card">
                 <h3 class="section-team__subtitle subtitle">Ольга Репина</h3>
                 <p class="section-team__desc" lang="en">Frontend Developer</p>
@@ -388,11 +579,65 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                src="./images/imagesmain/Tarasov.jpg"
-                alt="Фото Marketing Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <!-- desctop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-tarasov@1x_desk.webp 1x,
+                    ./images/imagesmain/team/img-tarasov@2x_desk.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-tarasov@1x_desk.jpg 1x,
+                    ./images/imagesmain/team/img-tarasov@2x_desk.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-tarasov@1x_tab.webp 1x,
+                    ./images/imagesmain/team/img-tarasov@2x_tab.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-tarasov@1x_tab.jpg 1x,
+                    ./images/imagesmain/team/img-tarasov@2x_tab.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-tarasov@1x_mob.webp 1x,
+                    ./images/imagesmain/team/img-tarasov@2x_mob.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-tarasov@1x_mob.jpg 1x,
+                    ./images/imagesmain/team/img-tarasov@2x_mob.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img
+                  src="./images/imagesmain/team/img-tarasov@1x_mob.jpg"
+                  alt="Фото Marketing Николай Тарасов"
+                  width=""
+                />
+              </picture>
               <div class="section-team__card">
                 <h3 class="section-team__subtitle subtitle">Николай Тарасов</h3>
                 <p class="section-team__desc" lang="en">Marketing</p>
@@ -453,14 +698,68 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img
-                src="./images/imagesmain/Ermakov.jpg"
-                alt="Фото UI Designer Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <!-- desctop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-ermakov@1x_desk.webp 1x,
+                    ./images/imagesmain/team/img-ermakov@2x_desk.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/imagesmain/team/img-ermakov@1x_desk.jpg 1x,
+                    ./images/imagesmain/team/img-ermakov@2x_desk.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-ermakov@1x_tab.webp 1x,
+                    ./images/imagesmain/team/img-ermakov@2x_tab.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/imagesmain/team/img-ermakov@1x_tab.jpg 1x,
+                    ./images/imagesmain/team/img-ermakov@2x_tab.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-ermakov@1x_mob.webp 1x,
+                    ./images/imagesmain/team/img-ermakov@2x_mob.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/imagesmain/team/img-ermakov@1x_mob.jpg 1x,
+                    ./images/imagesmain/team/img-ermakov@2x_mob.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- fallback -->
+                <img
+                  src="./images/imagesmain/team/img-ermakov@1x_mob.jpg"
+                  alt="Фото UI Designer Михаил Ермаков"
+                  width=""
+                />
+              </picture>
               <div class="section-team__card">
-                <h3 class="subtitle">Михаил Ермаков</h3>
-                <p class="desc" lang="en">UI Designer</p>
+                <h3 class="section-team__subtitle subtitle">Михаил Ермаков</h3>
+                <p class="section-team__desc" lang="en">UI Designer</p>
                 <ul class="list socialmedia-list">
                   <li class="socialmedia-list__item">
                     <a
@@ -709,7 +1008,8 @@
         </div>
       </div>
     </footer>
-    <!-- Скрипты -->
+    <!-- Скрипты  -->
     <script src="./js/modal.js"></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

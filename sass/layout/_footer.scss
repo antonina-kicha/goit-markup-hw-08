@@ -3,22 +3,53 @@
     padding-bottom: 60px;
     background-color: #2f303a;
 
-    &__container {
-            display: flex;
-            justify-content: flex-start;
-        }
-
-    &__contact {
-            margin-right: 70px;
-        }
+        @media screen and (max-width: 1199px) {
+                text-align: center;
+    }
 
     &__address {
         margin-top: 20px;
     }
+    &__container {
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        
+        }
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-start;            
+        }
+            
+    
+
+    &__contact {
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+            
+        }
+         @media screen and (min-width: 768px) {
+            margin-right: 165px;
+            margin-left: 61px;
+            margin-bottom: 60px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        }
+
+    &__subscribe {
+        @media screen and (max-width: 1199px) {
+                width: 100%;
+        }
+    }
+
 }
 
-
 .footer__logo {
+
     font-style: normal;
     color: var(--text-on-background);
 
@@ -34,7 +65,7 @@
     line-height: 1.71;
 
     &__item:not(:last-child) {
-            margin-bottom: 7px;
+            margin-bottom: 8px;
         }
 }
 
@@ -57,12 +88,14 @@
 
 
 .footer__follow {
-    margin-right: 93px;
+    @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+    }
 }
 
 .footer__title {
+    margin-top: 60px;
     margin-bottom: 20px;
-    padding-top: 12px;
 
     font-weight: 700;
     font-size: 14px;
@@ -71,6 +104,18 @@
     text-transform: uppercase;
 
     color: #ffffff;
+
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+    
+        }
+    @media screen and (min-width: 768px) {
+            margin-top: 0;
+        }    
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 12px;
+        }
 }
 
 .socialmedia-list__link--on-bckgr {

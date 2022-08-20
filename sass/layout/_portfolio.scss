@@ -1,20 +1,32 @@
 .header-line {
     border-bottom: 1px solid #ececec;
 }
+.portfolio {
+    padding-bottom: 60px;
 
+    @media screen and (min-width: 768px) {
+        padding-bottom: 94px;
+    }
+
+}
 .container-portfolio .filtr {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
     gap: 8px;
 
-    margin-bottom: 50px;
-}
+    margin-bottom: 40px;
 
-.portfolio .worklist-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
+    @media screen and (min-width: 768px) {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    @media screen and (min-width: 1200px) {
+             margin-bottom: 50px;
+         }
+    }
+
+
 
 .btn-filtr {
     padding: 6px 22px;
@@ -44,10 +56,25 @@
     background-color: var(--accent-color);
 }
 
+.portfolio .worklist-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+}
+
 .worklist-list .desc {
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+}
+
+.worklist-list .desc-higth {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 143px;
+    }
 }
 
 .worklist-list .title {
@@ -58,10 +85,23 @@
 }
 
 .worklist-list .item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
 
     transition: box-shadow var(--animation);
+
+    @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 1 * 30px) / 2);
+        }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 2 * 30px) / 3);
+    }
 }
+
+@media screen and (max-width: 767px) {
+    .worklist-list .item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 
 .worklist-list .item:hover,
 .worklist-list .item:focus {
