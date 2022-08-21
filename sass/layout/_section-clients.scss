@@ -1,10 +1,10 @@
 .section-clients {
     &--last{
-            padding-bottom: 94px;
+            padding-bottom: 60px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 1200px) {
         &--last {
-                padding-bottom: 60px;   
+                padding-bottom: 94px;   
         }
     }
 
